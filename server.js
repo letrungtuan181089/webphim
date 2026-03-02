@@ -12,6 +12,8 @@ app.get('/api/movies', (req, res) => {
   res.json(movies);
 });
 
-app.listen(3000, '0.0.0.0', () => {
-  console.log('Server chạy tại http://localhost:3000');
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log("Server running on port " + PORT);
 });
