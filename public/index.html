@@ -147,7 +147,7 @@ fetch('/api/movies')
       `;
 
       div.onclick = () => {
-        window.location.href = `/?id=${movie.id}`;
+        window.location.href = `/watch.html?id=${movie.id}`;
       };
 
       container.appendChild(div);
